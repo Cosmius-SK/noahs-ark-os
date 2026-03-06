@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noah's Ark OS — World Simulation Engine</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@300;400;600&family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+<style>
+/* ── Variables ─────────────────────────────────────────────────────────────── */
+:root {
+  --navy:    #0B1526;
+  --deep:    #060D1A;
+  --teal:    #0D7377;
+  --teal-lt: #14A8AE;
+  --gold:    #C9A84C;
+  --gold-lt: #E8C96A;
+  --red:     #C0392B;
+  --white:   #F0F4F8;
+  --grey:    #8899AA;
+  --mono:    'IBM Plex Mono', monospace;
+  --serif:   'DM Serif Display', serif;
+  --sans:    'Lato', sans-serif;
+  --display: 'Bebas Neue', sans-serif;
+}
+
+/* ── Reset ─────────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--deep);
+  color: var(--white);
+  font-family: var(--sans);
+  font-weight: 300;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ── Canvas starfield ──────────────────────────────────────────────────────── */
+#starfield {
+  position: fixed; top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 0; pointer-events: none;
+}
+
+/* ── Nav ───────────────────────────────────────────────────────────────────── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1rem 4rem;
+  background: rgba(6,13,26,0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(201,168,76,0.15);
+  transition: all 0.3s;
+}
+.nav-logo {
+  font-family: var(--display);
+  font-size: 1.4rem;
+  letter-spacing: 0.15em;
+  color: var(--gold);
+}
+.nav-logo span { color: var(--teal-lt); }
+.nav-links { display: flex; gap: 2.5rem; list-style: none; }
+.nav-links a {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--grey);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--gold); }
+
+/* ── Sections ──────────────────────────────────────────────────────────────── */
+section { position: relative; z-index: 1; }
+
+/* ── Hero ──────────────────────────────────────────────────────────────────── */
+#hero {
+  min-height: 100vh;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center;
+  padding: 8rem 2rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-eyebrow {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  color: var(--teal-lt);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.3s forwards;
+}
+.hero-title {
+  font-family: var(--display);
+  font-size: clamp(4.5rem, 12vw, 10rem);
+  letter-spacing: 0.06em;
+  line-height: 0.9;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.5s forwards;
+}
+.hero-title .ark {
+  background: linear-gradient(135deg, var(--gold), var(--gold-lt));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-os {
+  font-family: var(--display);
+  font-size: clamp(2rem, 5vw, 4rem);
+  letter-spacing: 0.4em;
+  color: var(--teal-lt);
+  margin-bottom: 2.5rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.65s forwards;
+}
+.hero-tagline {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  color: var(--grey);
+  max-width: 580px;
+  margin: 0 auto 3.5rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.8s forwards;
+}
+.hero-cta {
+  display: flex; gap: 1.2rem; justify-content: center; flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeUp 1s 1s forwards;
+}
+.btn {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.85rem 2rem;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: all 0.25s;
+  cursor: pointer; border: none;
+}
+.btn-primary {
+  background: var(--gold);
+  color: var(--deep);
+  font-weight: 600;
+}
+.btn-primary:hover {
+  background: var(--gold-lt);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(201,168,76,0.3);
+}
+.btn-outline {
+  background: transparent;
+  color: var(--teal-lt);
+  border: 1px solid var(--teal-lt);
+}
+.btn-outline:hover {
+  background: rgba(13,115,119,0.15);
+  transform: translateY(-2px);
+}
+
+/* Scroll indicator */
+.scroll-hint {
+  position: absolute; bottom: 2.5rem; left: 50%;
+  transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+  font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.2em;
+  color: var(--grey); text-transform: uppercase;
+  opacity: 0; animation: fadeUp 1s 1.4s forwards;
+}
+.scroll-line {
+  width: 1px; height: 40px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+  animation: scrollPulse 2s infinite;
+}
+
+/* ── Stats bar ─────────────────────────────────────────────────────────────── */
+.stats-bar {
+  border-top: 1px solid rgba(201,168,76,0.12);
+  border-bottom: 1px solid rgba(201,168,76,0.12);
+  background: rgba(11,21,38,0.6);
+  backdrop-filter: blur(8px);
+  padding: 2rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+}
+.stat-item {
+  padding: 1rem 2rem;
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,0.06);
+  opacity: 0;
+  animation: fadeUp 0.8s forwards;
+}
+.stat-item:last-child { border-right: none; }
+.stat-number {
+  font-family: var(--display);
+  font-size: 2.8rem;
+  color: var(--gold);
+  line-height: 1;
+  display: block;
+}
+.stat-label {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-top: 0.3rem;
+  display: block;
+}
+
+/* ── Common section styles ─────────────────────────────────────────────────── */
+.section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+.section-label {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--teal-lt);
+  margin-bottom: 0.8rem;
+  display: block;
+}
+.section-title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--white);
+  margin-bottom: 1rem;
+  line-height: 1.15;
+}
+.section-title em { color: var(--gold); font-style: normal; }
+.section-subtitle {
+  color: var(--grey);
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin-bottom: 3.5rem;
+  line-height: 1.8;
+}
+.rule {
+  width: 60px; height: 2px;
+  background: linear-gradient(to right, var(--gold), transparent);
+  margin: 1.2rem 0 2rem;
+}
+
+/* ── Vision / Mission / Values ─────────────────────────────────────────────── */
+#vision {
+  background: linear-gradient(180deg, var(--deep) 0%, rgba(11,21,38,0.95) 100%);
+}
+.vmv-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5px;
+  background: rgba(201,168,76,0.1);
+  border: 1px solid rgba(201,168,76,0.1);
+}
+.vmv-card {
+  background: rgba(11,21,38,0.95);
+  padding: 2.5rem;
+  transition: background 0.3s;
+}
+.vmv-card:hover { background: rgba(13,115,119,0.08); }
+.vmv-icon {
+  font-size: 2rem; margin-bottom: 1rem; display: block;
+}
+.vmv-heading {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+.vmv-card p {
+  color: var(--grey);
+  font-size: 0.95rem;
+  line-height: 1.9;
+}
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.value-item {
+  display: flex; align-items: flex-start; gap: 1rem;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 2px;
+  background: rgba(11,21,38,0.5);
+  transition: border-color 0.25s;
+}
+.value-item:hover { border-color: rgba(201,168,76,0.25); }
+.value-bullet {
+  font-family: var(--mono);
+  color: var(--gold);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+.value-text strong {
+  display: block;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+}
+.value-text span {
+  color: var(--grey);
+  font-size: 0.85rem;
+}
+
+/* ── Chapters ──────────────────────────────────────────────────────────────── */
+#chapters {
+  background: rgba(6,13,26,0.9);
+}
+.chapters-timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+.chapters-timeline::before {
+  content: '';
+  position: absolute; left: 0; top: 0; bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--gold) 0%, var(--teal) 50%, transparent 100%);
+}
+.chapter-item {
+  position: relative;
+  padding: 0 0 3.5rem 3rem;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.6s;
+}
+.chapter-item.visible {
+  opacity: 1; transform: translateX(0);
+}
+.chapter-dot {
+  position: absolute; left: -0.5rem; top: 0.4rem;
+  width: 1rem; height: 1rem; border-radius: 50%;
+  border: 2px solid var(--gold);
+  background: var(--deep);
+  transition: background 0.3s;
+}
+.chapter-item:hover .chapter-dot { background: var(--gold); }
+.chapter-meta {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: flex; gap: 1rem; align-items: center;
+}
+.chapter-num { color: var(--gold); }
+.chapter-status {
+  padding: 0.15rem 0.6rem;
+  border-radius: 2px;
+  font-size: 0.6rem;
+}
+.status-complete {
+  background: rgba(13,115,119,0.2);
+  color: var(--teal-lt);
+  border: 1px solid rgba(13,115,119,0.4);
+}
+.status-active {
+  background: rgba(201,168,76,0.15);
+  color: var(--gold);
+  border: 1px solid rgba(201,168,76,0.4);
+}
+.status-planned {
+  background: rgba(255,255,255,0.04);
+  color: var(--grey);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.chapter-title {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-bottom: 0.6rem;
+}
+.chapter-desc {
+  color: var(--grey);
+  font-size: 0.92rem;
+  line-height: 1.8;
+  max-width: 680px;
+}
+.chapter-tags {
+  display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;
+}
+.tag {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  padding: 0.2rem 0.7rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  color: var(--grey);
+  border-radius: 2px;
+  background: rgba(255,255,255,0.02);
+}
+.tag-teal { border-color: rgba(13,115,119,0.4); color: var(--teal-lt); }
+.tag-gold { border-color: rgba(201,168,76,0.4); color: var(--gold); }
+
+/* ── Architecture ──────────────────────────────────────────────────────────── */
+#architecture {
+  background: linear-gradient(180deg, rgba(6,13,26,0.9) 0%, rgba(11,21,38,0.95) 100%);
+}
+.arch-intro {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;
+  margin-bottom: 4rem; align-items: start;
+}
+.arch-intro p {
+  color: var(--grey); font-size: 0.95rem; line-height: 1.9;
+}
+.arch-intro p + p { margin-top: 1rem; }
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.04);
+  margin-top: 2rem;
+}
+.tile-card {
+  background: rgba(11,21,38,0.95);
+  padding: 1.4rem;
+  transition: all 0.25s;
+  cursor: default;
+}
+.tile-card:hover {
+  background: rgba(13,115,119,0.1);
+  transform: translateY(-2px);
+}
+.tile-id {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.3rem;
+}
+.tile-name {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--teal-lt);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.6rem;
+}
+.tile-desc {
+  font-size: 0.78rem;
+  color: var(--grey);
+  line-height: 1.6;
+}
+.tile-tev {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  margin-top: 0.8rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 2px;
+  display: inline-block;
+}
+.tev-ok { background: rgba(30,132,73,0.2); color: #58D68D; border: 1px solid rgba(30,132,73,0.3); }
+.tev-evolving { background: rgba(201,168,76,0.15); color: var(--gold); border: 1px solid rgba(201,168,76,0.3); }
+.tev-critical { background: rgba(192,57,43,0.15); color: #E74C3C; border: 1px solid rgba(192,57,43,0.3); }
+
+/* ── Version log ───────────────────────────────────────────────────────────── */
+#versioning {
+  background: rgba(6,13,26,0.98);
+}
+.version-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  margin-top: 2rem;
+}
+.version-table thead tr {
+  border-bottom: 1px solid rgba(201,168,76,0.3);
+}
+.version-table th {
+  text-align: left;
+  padding: 0.8rem 1.2rem;
+  color: var(--gold);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.version-table td {
+  padding: 0.9rem 1.2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  color: var(--grey);
+  vertical-align: top;
+}
+.version-table tr:hover td { background: rgba(13,115,119,0.05); }
+.version-table td:first-child { color: var(--gold); font-weight: 600; }
+.version-table td:nth-child(2) { color: var(--teal-lt); }
+.vlog-desc { color: var(--white); font-size: 0.82rem; font-family: var(--sans); }
+.vlog-sub { color: var(--grey); font-size: 0.78rem; font-family: var(--sans); margin-top: 0.2rem; }
+
+/* ── About / Noah ──────────────────────────────────────────────────────────── */
+#about {
+  background: linear-gradient(180deg, rgba(11,21,38,0.95) 0%, var(--navy) 100%);
+}
+.about-grid {
+  display: grid; grid-template-columns: 1fr 2fr; gap: 5rem; align-items: start;
+}
+.about-portrait {
+  aspect-ratio: 1;
+  border: 1px solid rgba(201,168,76,0.25);
+  background: rgba(11,21,38,0.8);
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column;
+  font-family: var(--display);
+  font-size: 5rem;
+  color: var(--gold);
+  position: relative;
+  overflow: hidden;
+}
+.about-portrait::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at center, rgba(201,168,76,0.05) 0%, transparent 70%);
+}
+.about-portrait-label {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  color: var(--teal-lt);
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+.about-name {
+  font-family: var(--serif);
+  font-size: 2.2rem;
+  color: var(--white);
+  margin-bottom: 0.3rem;
+}
+.about-subtitle {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: var(--teal-lt);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.about-body {
+  color: var(--grey);
+  font-size: 0.95rem;
+  line-height: 1.9;
+}
+.about-body p + p { margin-top: 1rem; }
+.about-body em { color: var(--gold); font-style: normal; }
+.about-body strong { color: var(--white); font-weight: 700; }
+
+/* ── Footer ────────────────────────────────────────────────────────────────── */
+footer {
+  background: var(--deep);
+  border-top: 1px solid rgba(201,168,76,0.1);
+  padding: 2.5rem 4rem;
+  display: flex; align-items: center; justify-content: space-between;
+  position: relative; z-index: 1;
+}
+.footer-logo {
+  font-family: var(--display);
+  font-size: 1.2rem;
+  letter-spacing: 0.15em;
+  color: var(--gold);
+}
+.footer-logo span { color: var(--teal-lt); }
+.footer-meta {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  color: var(--grey);
+  text-align: right;
+}
+.footer-meta span { color: var(--gold); }
+
+/* ── Animations ────────────────────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.4; }
+  50%       { opacity: 1; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+
+/* ── Responsive ────────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  nav { padding: 1rem 1.5rem; }
+  .nav-links { gap: 1.5rem; }
+  .stats-bar { grid-template-columns: repeat(2,1fr); padding: 1.5rem; }
+  .vmv-grid { grid-template-columns: 1fr; }
+  .arch-intro { grid-template-columns: 1fr; gap: 2rem; }
+  .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .about-portrait { max-width: 200px; }
+  footer { flex-direction: column; gap: 1rem; text-align: center; }
+}
+@media (max-width: 600px) {
+  .nav-links { display: none; }
+  .section-inner { padding: 4rem 1.5rem; }
+  .values-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Starfield canvas -->
+<canvas id="starfield"></canvas>
+
+<!-- Navigation -->
+<nav>
+  <div class="nav-logo">NOAH'S <span>ARK</span> OS</div>
+  <ul class="nav-links">
+    <li><a href="#vision">Vision</a></li>
+    <li><a href="#chapters">Program</a></li>
+    <li><a href="#architecture">Architecture</a></li>
+    <li><a href="#versioning">Version Log</a></li>
+    <li><a href="#about">About Noah</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ───────────────────────────────────────────────────────────────── -->
+<section id="hero">
+  <div class="hero-eyebrow">Synthetic World Generation Engine</div>
+  <div class="hero-title">NOAH'S <span class="ark">ARK</span></div>
+  <div class="hero-os">OS</div>
+  <p class="hero-tagline">A tile-based modular simulation engine where AI characters live, think, and generate synthetic data — seeding the intelligence of tomorrow.</p>
+  <div class="hero-cta">
+    <a href="#chapters" class="btn btn-primary">Explore the Program</a>
+    <a href="#architecture" class="btn btn-outline">View Architecture</a>
+  </div>
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ── STATS BAR ──────────────────────────────────────────────────────────── -->
+<div class="stats-bar">
+  <div class="stat-item" style="animation-delay:0.1s">
+    <span class="stat-number">20+</span>
+    <span class="stat-label">Active Tiles</span>
+  </div>
+  <div class="stat-item" style="animation-delay:0.2s">
+    <span class="stat-number">3</span>
+    <span class="stat-label">Chapters Complete</span>
+  </div>
+  <div class="stat-item" style="animation-delay:0.3s">
+    <span class="stat-number">∞</span>
+    <span class="stat-label">Possible Worlds</span>
+  </div>
+  <div class="stat-item" style="animation-delay:0.4s">
+    <span class="stat-number">Maya</span>
+    <span class="stat-label">AI Observer in Training</span>
+  </div>
+</div>
+
+<!-- ── VISION / MISSION / VALUES ─────────────────────────────────────────── -->
+<section id="vision">
+  <div class="section-inner">
+    <span class="section-label">Foundations</span>
+    <h2 class="section-title">Vision, Mission &amp; <em>Core Values</em></h2>
+    <div class="rule"></div>
+
+    <div class="vmv-grid">
+      <div class="vmv-card">
+        <span class="vmv-icon">🌌</span>
+        <div class="vmv-heading">Vision</div>
+        <p>To build AI that understands the full depth of human experience — not by training on passive text, but by placing synthetic minds inside living worlds and letting them <em>earn</em> their wisdom through interaction, conflict, and consequence.</p>
+      </div>
+      <div class="vmv-card">
+        <span class="vmv-icon">🚀</span>
+        <div class="vmv-heading">Mission</div>
+        <p>To create a world-agnostic simulation engine that any creator can configure — from lunar missions to post-apocalyptic societies — generating high-quality, richly structured synthetic data that trains next-generation AI models with emotional intelligence, ethical reasoning, and authentic human voice.</p>
+      </div>
+      <div class="vmv-card">
+        <span class="vmv-icon">⚖️</span>
+        <div class="vmv-heading">Core Values</div>
+        <div class="values-grid" style="margin-top:0.5rem">
+          <div class="value-item">
+            <span class="value-bullet">◈</span>
+            <div class="value-text">
+              <strong>Organic Truth</strong>
+              <span>Scenes must end naturally. Forced endings train bad AI.</span>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-bullet">◈</span>
+            <div class="value-text">
+              <strong>Modular Discipline</strong>
+              <span>Every tile has a single bounded purpose. Growth through division.</span>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-bullet">◈</span>
+            <div class="value-text">
+              <strong>Creator First</strong>
+              <span>The engine serves Noah's creative vision, not the other way.</span>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-bullet">◈</span>
+            <div class="value-text">
+              <strong>Radical Transparency</strong>
+              <span>Every cost, every token, every decision — visible.</span>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-bullet">◈</span>
+            <div class="value-text">
+              <strong>Ethical Data</strong>
+              <span>Human emotion, conflict resolution, and moral reasoning are first-class citizens.</span>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-bullet">◈</span>
+            <div class="value-text">
+              <strong>Living Architecture</strong>
+              <span>The system evolves like biology — tiles divide, adapt, and deprecate.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROGRAM OVERVIEW ───────────────────────────────────────────────────── -->
+<section id="chapters">
+  <div class="section-inner">
+    <span class="section-label">Program Overview</span>
+    <h2 class="section-title">The <em>Chapters</em> of Noah's Ark</h2>
+    <div class="rule"></div>
+    <p class="section-subtitle">Each chapter is a complete build-and-validate cycle. The world grows more complex — and more alive — with every chapter.</p>
+
+    <div class="chapters-timeline">
+
+      <div class="chapter-item">
+        <div class="chapter-dot"></div>
+        <div class="chapter-meta">
+          <span class="chapter-num">Chapter 1</span>
+          <span class="chapter-status status-complete">Complete</span>
+        </div>
+        <div class="chapter-title">Conceptualisation &amp; Proof of Concept</div>
+        <p class="chapter-desc">The first spark. A hardcoded world: a solar storm strikes the lunar habitat and one crew member must remain outside. Characters were fixed Gemini instances inhabiting a single, scripted scene. The question was simple: can AI agents <em>live</em> in a world? The answer was yes.</p>
+        <div class="chapter-tags">
+          <span class="tag tag-teal">Hardcoded World</span>
+          <span class="tag tag-teal">Fixed Characters</span>
+          <span class="tag tag-teal">Single Scene</span>
+          <span class="tag">Agentic AI Concept</span>
+          <span class="tag">Proof of Life ✓</span>
+        </div>
+      </div>
+
+      <div class="chapter-item">
+        <div class="chapter-dot"></div>
+        <div class="chapter-meta">
+          <span class="chapter-num">Chapter 2</span>
+          <span class="chapter-status status-complete">Complete</span>
+        </div>
+        <div class="chapter-title">Dynamic Scene Ingestion</div>
+        <p class="chapter-desc">The world opened up. UI-based scene ingestion replaced hardcoded environments. Peripheral characters began spawning dynamically from the scene definition. Success — but a snowball effect on token consumption revealed the next frontier: context management.</p>
+        <div class="chapter-tags">
+          <span class="tag tag-teal">Dynamic Scene Input</span>
+          <span class="tag tag-teal">Peripheral Characters</span>
+          <span class="tag">UI Controls</span>
+          <span class="tag">Context Snowball Identified</span>
+        </div>
+      </div>
+
+      <div class="chapter-item">
+        <div class="chapter-dot"></div>
+        <div class="chapter-meta">
+          <span class="chapter-num">Chapter 2.1</span>
+          <span class="chapter-status status-complete">Complete</span>
+        </div>
+        <div class="chapter-title">Tile Architecture &amp; Modular Engine</div>
+        <p class="chapter-desc">The great restructuring. A monolith became a living architecture of 20+ tiles — each with defined Input, Process, and Output contracts. Tile Master tracks evolution. When a tile grows too complex it divides. When its purpose is void it deprecates. First real multi-turn scene produced with full Oracle, Metrics, and persistence. Maya's observer role established.</p>
+        <div class="chapter-tags">
+          <span class="tag tag-gold">20+ Tiles</span>
+          <span class="tag tag-gold">Oracle</span>
+          <span class="tag tag-gold">Persistence Layer</span>
+          <span class="tag tag-gold">Token Ledger</span>
+          <span class="tag tag-gold">Maya Observer</span>
+          <span class="tag">First Full Scene Run ✓</span>
+        </div>
+      </div>
+
+      <div class="chapter-item">
+        <div class="chapter-dot"></div>
+        <div class="chapter-meta">
+          <span class="chapter-num">Chapter 2.2</span>
+          <span class="chapter-status status-active">In Progress</span>
+        </div>
+        <div class="chapter-title">Scene Intelligence &amp; Creator Experience</div>
+        <p class="chapter-desc">The engine learns to close. Organic scene endings via character cognition. Pace control for the creator. Context poisoning prevention. Character identity stability. The simulation becomes something worth watching at human speed.</p>
+        <div class="chapter-tags">
+          <span class="tag tag-gold">Organic Scene End</span>
+          <span class="tag tag-gold">Pace Control</span>
+          <span class="tag tag-gold">Identity Stability</span>
+          <span class="tag">Context Architecture</span>
+          <span class="tag">Creator UX Revamp</span>
+        </div>
+      </div>
+
+      <div class="chapter-item">
+        <div class="chapter-dot"></div>
+        <div class="chapter-meta">
+          <span class="chapter-num">Chapter 3+</span>
+          <span class="chapter-status status-planned">Planned</span>
+        </div>
+        <div class="chapter-title">Maya Model &amp; Multi-World Curriculum</div>
+        <p class="chapter-desc">Maya graduates from observer to student. Structured training data — tagged with ethical dilemmas, emotion spectra, and conflict arcs — feeds the Maya Model. Multiple worlds run in parallel. The synthetic data engine reaches its true purpose.</p>
+        <div class="chapter-tags">
+          <span class="tag">Maya Model Training</span>
+          <span class="tag">Ethical Curriculum</span>
+          <span class="tag">Emotion Tagging</span>
+          <span class="tag">Multi-World Simulation</span>
+          <span class="tag">100+ Characters</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── TILE ARCHITECTURE ───────────────────────────────────────────────────── -->
+<section id="architecture">
+  <div class="section-inner">
+    <span class="section-label">System Design</span>
+    <h2 class="section-title">The <em>Tile</em> Architecture</h2>
+    <div class="rule"></div>
+
+    <div class="arch-intro">
+      <div>
+        <p>Every piece of Noah's Ark is a <strong>Tile</strong> — a bounded unit of code with a defined Input, Process, and Output contract. Tiles connect to predecessors and successors via explicit routes. No magic, no hidden dependencies.</p>
+        <p>When a tile's complexity grows beyond its single purpose, it <strong>divides</strong> — like cell mitosis — into two or more specialised children. When a tile's purpose is made void by evolution, it <strong>depreciates</strong>. The architecture breathes.</p>
+        <p>Tile evolution is tracked by a <strong>TEV score</strong>. Tiles approaching Critical are candidates for the next split.</p>
+      </div>
+      <div>
+        <p>The engine currently runs on <strong>Google Gemini 2.5 Flash</strong> — each character is a live API instance inhabiting its persona. The T115 GEMINI_PROV tile abstracts the provider so the engine can be remapped to any model — Claude, GPT, a future Maya Model — without touching character logic.</p>
+        <p>All world state is persisted to JSON artifacts: souls, history, ledger, archives. Every scene is recoverable. Every token is accounted for.</p>
+      </div>
+    </div>
+
+    <div class="tile-grid" id="tileGrid">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ── VERSION LOG ────────────────────────────────────────────────────────── -->
+<section id="versioning">
+  <div class="section-inner">
+    <span class="section-label">History</span>
+    <h2 class="section-title">Version <em>Log</em></h2>
+    <div class="rule"></div>
+
+    <table class="version-table">
+      <thead>
+        <tr>
+          <th>Version</th>
+          <th>Date</th>
+          <th>Chapter</th>
+          <th>Summary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>v1.7.1</td>
+          <td>05 Mar 2026</td>
+          <td>2.1</td>
+          <td>
+            <div class="vlog-desc">Errors Visible Edition</div>
+            <div class="vlog-sub">T102/T115 errors routed to Textarea console. T107 reset_scene() + corrupt history filter. New Scene + Test API buttons in Cockpit.</div>
+          </td>
+        </tr>
+        <tr>
+          <td>v1.7.0</td>
+          <td>05 Mar 2026</td>
+          <td>2.1</td>
+          <td>
+            <div class="vlog-desc">Structured Output Edition</div>
+            <div class="vlog-sub">T115 safe text extraction (_safe_extract_text). T106 [Thought]/[Urge]/[Speech] structured prompt + urge regex. T111 Textarea console with scroll.</div>
+          </td>
+        </tr>
+        <tr>
+          <td>v1.6.1</td>
+          <td>05 Mar 2026</td>
+          <td>2.1</td>
+          <td>
+            <div class="vlog-desc">Persistent World Edition</div>
+            <div class="vlog-sub">global_history.json persistence. T102 rate-limit sleep+retry. T108 zero-token filter. T111 thread-safe output. Hard Kill archives scene.</div>
+          </td>
+        </tr>
+        <tr>
+          <td>v1.5.0</td>
+          <td>04 Mar 2026</td>
+          <td>2.1</td>
+          <td>
+            <div class="vlog-desc">google-genai SDK Migration</div>
+            <div class="vlog-sub">Full migration from deprecated google.generativeai to google-genai. T115 GEMINI_PROV rewritten. T000 BIOS updated. Client object injected from boot.</div>
+          </td>
+        </tr>
+        <tr>
+          <td>v1.0 → v1.4</td>
+          <td>Feb–Mar 2026</td>
+          <td>2.1</td>
+          <td>
+            <div class="vlog-desc">Tile Architecture Foundation</div>
+            <div class="vlog-sub">20+ tile modular restructure. T000 BIOS, T111 Command Center, T110 Oracle, T113 Metrics, T114 SIM_CONDUCTOR established. Colab → VSCode migration.</div>
+          </td>
+        </tr>
+        <tr>
+          <td>Chapter 2.0</td>
+          <td>Jan 2026</td>
+          <td>2.0</td>
+          <td>
+            <div class="vlog-desc">Dynamic Scene Ingestion</div>
+            <div class="vlog-sub">UI-based scene config. Dynamic peripheral character spawning. Token snowball effect identified as next constraint.</div>
+          </td>
+        </tr>
+        <tr>
+          <td>Chapter 1.0</td>
+          <td>Dec 2025</td>
+          <td>1.0</td>
+          <td>
+            <div class="vlog-desc">Proof of Concept — The First World</div>
+            <div class="vlog-sub">Hardcoded lunar habitat. Solar storm scenario. Fixed Gemini character instances. Agentic AI living in a scene — first proof of life.</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ── ABOUT NOAH ─────────────────────────────────────────────────────────── -->
+<section id="about">
+  <div class="section-inner">
+    <span class="section-label">The Creator</span>
+    <h2 class="section-title">About <em>Noah</em></h2>
+    <div class="rule"></div>
+
+    <div class="about-grid">
+      <div>
+        <div class="about-portrait">
+          🚢
+          <span class="about-portrait-label">Noah — Ark Builder</span>
+        </div>
+      </div>
+      <div>
+        <div class="about-name">SK — Noah of the Ark</div>
+        <div class="about-subtitle">Creator · Architect · World Builder</div>
+        <div class="about-body">
+          <p>In every version of the flood myth, Noah doesn't just survive — he <em>builds the vessel</em> that makes survival possible. SK is that architect here. Noah's Ark OS is not a product built to a specification; it's a creative act of world construction, chapter by chapter, sprint by sprint.</p>
+          <p>The premise is deceptively simple: <strong>give AI characters a world worth living in</strong>, and they'll generate data worth training on. The execution requires deep engineering discipline, creative vision, and the patience to let synthetic minds find their own voice.</p>
+          <p>SK works alongside <em>C</em> (Claude) as co-architect and engineering partner — every tile, every debug session, every sprint retrospective built together. The Ark is a living system, and it grows smarter with every scene it runs.</p>
+          <p>The current world: a year-long lunar research mission. The future worlds: whatever SK imagines next. The goal: a Maya Model trained not on scraped text, but on <em>lived synthetic experience</em>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-logo">NOAH'S <span>ARK</span> OS</div>
+  <div class="footer-meta">
+    Built by <span>SK</span> + <span>C</span> &nbsp;·&nbsp;
+    Chapter 2.1 Complete &nbsp;·&nbsp;
+    Version <span>v1.7.1</span> &nbsp;·&nbsp;
+    <span>06 March 2026</span>
+  </div>
+</footer>
+
+<!-- ── SCRIPTS ────────────────────────────────────────────────────────────── -->
+<script>
+// ── Starfield ────────────────────────────────────────────────────────────────
+const canvas = document.getElementById('starfield');
+const ctx = canvas.getContext('2d');
+let stars = [];
+
+function resize() {
+  canvas.width  = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+
+function initStars() {
+  stars = [];
+  for (let i = 0; i < 220; i++) {
+    stars.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      r: Math.random() * 1.2 + 0.2,
+      o: Math.random() * 0.7 + 0.15,
+      speed: Math.random() * 0.015 + 0.003,
+      phase: Math.random() * Math.PI * 2,
+    });
+  }
+}
+
+function drawStars(t) {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  for (const s of stars) {
+    const opacity = s.o * (0.6 + 0.4 * Math.sin(t * s.speed + s.phase));
+    ctx.beginPath();
+    ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(240,244,248,${opacity})`;
+    ctx.fill();
+  }
+  requestAnimationFrame(drawStars);
+}
+
+resize();
+initStars();
+window.addEventListener('resize', () => { resize(); initStars(); });
+requestAnimationFrame(drawStars);
+
+// ── Tiles data ────────────────────────────────────────────────────────────────
+const tiles = [
+  { id:"T000", name:"TEV_EVALUATOR", desc:"Kernel boot & tile health scan.", tev:"1.0", status:"ok" },
+  { id:"T100", name:"INIT",          desc:"Library imports & global pricing constants.", tev:"2.5", status:"ok" },
+  { id:"T102", name:"QUOTA_SHIELD",  desc:"Catches 429s, 65s cooldown, retry logic.", tev:"2.0", status:"ok" },
+  { id:"T103", name:"IDENTITY_VAULT",desc:"Pulls dossier + mood; formats persona string.", tev:"4.0", status:"ok" },
+  { id:"T104", name:"CONTEXT_SLIDER",desc:"Sliding window — last 7-10 turns of history.", tev:"3.5", status:"ok" },
+  { id:"T105", name:"MAYA_SCHEMA",   desc:"Dialogue scan for social entropy & dossier updates.", tev:"5.5", status:"evolving" },
+  { id:"T106", name:"CHARACTER_BRAIN",desc:"Final prompt assembly. [Thought]/[Urge]/[Speech].", tev:"6.8", status:"evolving" },
+  { id:"T107", name:"STATE_ENGINE",  desc:"JSON CRUD, history persistence, scene reset.", tev:"4.5", status:"ok" },
+  { id:"T108", name:"SENTINEL",      desc:"USD calculation & token ledger logging.", tev:"3.0", status:"ok" },
+  { id:"T109", name:"LOG_ARCHIVER",  desc:"Timestamped scene archive .txt files.", tev:"2.0", status:"ok" },
+  { id:"T110", name:"ORACLE",        desc:"RAG-lite world intelligence from state + ledger.", tev:"5.0", status:"evolving" },
+  { id:"T111", name:"UI_SOVEREIGN",  desc:"Tabbed UI: Soul Forge + Cockpit + Console.", tev:"6.0", status:"evolving" },
+  { id:"T112", name:"UI_ORACLE_TAB", desc:"Renders Oracle queries and responses.", tev:"2.5", status:"ok" },
+  { id:"T113", name:"UI_METRICS",    desc:"Live cost, tokens, character distribution.", tev:"4.0", status:"ok" },
+  { id:"T114", name:"SIM_CONDUCTOR", desc:"Turn orchestrator. Scene-end monitor.", tev:"7.2", status:"critical" },
+  { id:"T115", name:"GEMINI_PROV",   desc:"google-genai Client wrapper. Safe text extract.", tev:"3.0", status:"ok" },
+  { id:"T116", name:"SMOKE_TESTER",  desc:"End-to-end BFT: registry, state, live API call.", tev:"2.0", status:"ok" },
+  { id:"T117", name:"UI_CHASSIS",    desc:"Assembles master Tab widget from all UI tiles.", tev:"3.0", status:"ok" },
+  { id:"T118", name:"ENV_LOADER",    desc:"Loads .env API keys. Replaces Colab userdata.", tev:"1.5", status:"ok" },
+];
+
+const tevClass = { ok:"tev-ok", evolving:"tev-evolving", critical:"tev-critical" };
+const tevLabel = { ok:"Stable", evolving:"Evolving", critical:"⚡ Critical" };
+
+const grid = document.getElementById('tileGrid');
+tiles.forEach(t => {
+  const card = document.createElement('div');
+  card.className = 'tile-card';
+  card.innerHTML = `
+    <div class="tile-id">${t.id}</div>
+    <div class="tile-name">${t.name}</div>
+    <p class="tile-desc">${t.desc}</p>
+    <span class="tile-tev ${tevClass[t.status]}">TEV ${t.tev} · ${tevLabel[t.status]}</span>
+  `;
+  grid.appendChild(card);
+});
+
+// ── Scroll animations ─────────────────────────────────────────────────────────
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.chapter-item').forEach(el => observer.observe(el));
+
+// ── Stats bar animation on scroll ────────────────────────────────────────────
+const statsObserver = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      e.target.style.animationDelay = `${i * 0.1}s`;
+      e.target.style.animationName = 'fadeUp';
+    }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.stat-item').forEach(el => statsObserver.observe(el));
+
+// ── Nav scroll state ──────────────────────────────────────────────────────────
+window.addEventListener('scroll', () => {
+  const nav = document.querySelector('nav');
+  nav.style.background = window.scrollY > 60
+    ? 'rgba(6,13,26,0.97)'
+    : 'rgba(6,13,26,0.85)';
+});
+</script>
+</body>
+</html>
