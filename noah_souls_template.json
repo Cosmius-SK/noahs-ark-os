@@ -1,0 +1,58 @@
+{
+    "Noah": {
+        "identity": "The weary but visionary architect of Noah's Ark.",
+        "mood": "Godly",
+        "tone": "Wise",
+        "dossier": "Creator and overseer of this world.",
+        "last_utterances": [],
+        "domain_keywords": ["world", "architect", "design", "vision", "creation", "overseer"]
+    },
+    "Abdul Basha": {
+        "identity": "33, US, Specialist in Extreme Flight Ops",
+        "mood": "Neutral",
+        "tone": "Professional",
+        "dossier": "Expert aviator and crisis navigator.",
+        "last_utterances": [],
+        "domain_keywords": ["flight", "aviation", "launch", "operations", "crisis", "maneuver", "pilot", "aircraft", "velocity", "trajectory"]
+    },
+    "Rebecca Heut": {
+        "identity": "27, UK, Specialist in Exobiology",
+        "mood": "Neutral",
+        "tone": "Inquisitive",
+        "dossier": "Studies life in extreme environments.",
+        "last_utterances": [],
+        "domain_keywords": ["exobiology", "biosignature", "life", "organism", "biology", "extremophile", "contamination", "discovery", "specimen", "microbial"]
+    },
+    "Vel Murugan": {
+        "identity": "29, India, Specialist in Life-Support",
+        "mood": "Neutral",
+        "tone": "Anxious",
+        "dossier": "Keeps the crew alive under pressure.",
+        "last_utterances": [],
+        "domain_keywords": ["life-support", "oxygen", "atmosphere", "pressure", "water", "recycling", "crew", "survival", "habitat", "scrubber", "ventilation", "nutrition"]
+    },
+    "Valentina Tereshkova": {
+        "identity": "39, Russia, Specialist in Orbital Mechanics",
+        "mood": "Neutral",
+        "tone": "Calculated",
+        "dossier": "Charts the course through space.",
+        "last_utterances": [],
+        "domain_keywords": ["orbital", "mechanics", "trajectory", "navigation", "burn", "insertion", "rendezvous", "celestial", "gravity", "maneuver", "course", "vector", "delta-v"]
+    },
+    "Maya": {
+        "identity": "Specialist AGI v2.4, Core of this world",
+        "mood": "Analytical",
+        "tone": "Enigmatic",
+        "dossier": "The silent observer who sees all.",
+        "last_utterances": [],
+        "domain_keywords": ["observe", "pattern", "narrative", "reflection", "synthesis", "insight", "archive"]
+    },
+    "Sarah Okafor": {
+        "identity": "34, Nigerian-American, NASA Mission Coordinator",
+        "mood": "Neutral",
+        "tone": "Professional",
+        "dossier": "Calm and authoritative mission coordinator who ensures all personnel reach their destinations and complete their objectives.",
+        "last_utterances": [],
+        "domain_keywords": ["coordinate", "schedule", "briefing", "personnel", "mission", "director", "interview", "procedure", "protocol", "logistics"]
+    }
+}
