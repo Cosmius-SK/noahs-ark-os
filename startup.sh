@@ -10,7 +10,24 @@
 echo "🚀 Noah's Ark OS — Codespace Startup"
 echo "======================================"
 
-# ── Step 1: Restore runtime JSON files from templates ------------------
+# ── Step 1: Install Python dependencies --------------------------------
+echo ""
+echo "📦 Installing Python packages..."
+
+pip install --quiet \
+    google-genai \
+    ipywidgets \
+    jupyter \
+    nbformat \
+    openpyxl \
+    python-docx
+
+# Enable ipywidgets for Jupyter
+jupyter nbextension enable --py widgetsnbextension --quiet 2>/dev/null
+
+echo "   ✅ All packages installed"
+
+# ── Step 2: Restore runtime JSON files from templates ------------------
 echo ""
 echo "📂 Restoring runtime files..."
 
@@ -44,7 +61,7 @@ else
     echo "   ✅ token_ledger.json already exists"
 fi
 
-# ── Step 2: Verify .env file -------------------------------------------
+# ── Step 3: Verify .env file -------------------------------------------
 echo ""
 echo "🔑 Checking API key..."
 
@@ -57,12 +74,12 @@ else
     echo "      Create .env with: GEMINI_API_KEY=your_key_here"
 fi
 
-# ── Step 3: Show current notebook versions ----------------------------
+# ── Step 4: Show current notebook versions ----------------------------
 echo ""
 echo "📓 Available notebooks:"
 ls *.ipynb 2>/dev/null | sort | tail -5 || echo "   No notebooks found"
 
-# ── Step 4: Show git status -------------------------------------------
+# ── Step 5: Show git status -------------------------------------------
 echo ""
 echo "📋 Git status:"
 git status --short 2>/dev/null || echo "   Not a git repo"
