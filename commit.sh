@@ -29,7 +29,7 @@ echo "📂 Staging files..."
 git add *.ipynb 2>/dev/null && echo "   ✅ Notebooks staged" || echo "   — No notebooks"
 
 # Docs
-git add *.docx *.xlsx *.pdf 2>/dev/null && echo "   ✅ Docs staged" || echo "   — No docs"
+find . -maxdepth 1 \( -name "*.docx" -o -name "*.xlsx" -o -name "*.pdf" \) | xargs git add 2>/dev/null && echo "   ✅ Docs staged" || echo "   — No docs"
 
 # Scripts
 git add *.sh 2>/dev/null && echo "   ✅ Scripts staged" || echo "   — No scripts"
