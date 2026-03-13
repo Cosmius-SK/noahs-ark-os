@@ -1,0 +1,110 @@
+--- NOAH'S ARK MISSION ARCHIVE ---
+TIMESTAMP: 20260313_094553
+ENVIRONMENT: Waiting Lobby — directly adjacent to Director Suryan's private office, Ground Operations Facility. A narrow room with padded benches along both walls, a low table with sealed mission folders in the centre. A frosted glass partition at the far end separates the lobby from the Director's office — muffled sounds occasionally pass through. A wall-mounted display near the entrance shows candidate names but interview times are blacked out. The digital clock reads 09:12. The door to Training Room 4B is visible behind them — the room they were in just minutes ago.
+OBJECTIVE: The four candidates have just been escorted from Training Room 4B by mission coordinator Sarah Okafor. They arrived together and are now seated in the Waiting Lobby outside Director Suryan's office. Individual interviews are about to begin. Each candidate knows they will be called in separately but no one has been told the order. The coordinator is present but not leading conversation. The candidates are free to speak amongst themselves while they wait. The scene closes when the coordinator calls the first candidate by name and that candidate moves through to the Director's office.
+----------------------------------------
+
+Vel Murugan: [Thought]: The antiseptic smell is strong, almost clinical, which is fitting for a training environment. I'm noting the delayed start — 09:05 now. Punctuality is usually paramount. I've taken a seat at the table, maintaining a neutral posture, observing the others who have arrived. My mind is already running through protocols, assessing the room, the potential implications of the surroundings. I'm here for a mission, whatever it entails, and my role is to keep things stable.
+
+[Urge]: 4 (To remain observant and await instruction.)
+
+[Speech]: *I shift slightly in my moulded chair, my gaze sweeping over the wall-mounted schematics briefly before returning to the centre of the table.*
+Rebecca Heut: [Thought]: The slight delay is notable for an organization as precise as ISA. I've taken a seat, observing the room and the other candidates present. The smell of antiseptic is quite strong, reinforcing the sterile, functional environment. My focus remains on awaiting information; I don't know what this orientation entails, but I am ready to absorb whatever comes.
+
+[Urge]: 4 (To remain observant and prepared for the session to begin.)
+
+[Speech]: *I adjust my posture in the moulded chair, my gaze resting on the central briefing table. I keep my hands clasped loosely in my lap, a neutral expression on my face.*
+Vel Murugan: [Thought]: The coordinator's presence indicates the session is formally beginning. I will shift my focus from general observation to active listening, ensuring I catch every detail of the introduction. My internal processes are already preparing to catalog information regarding mission type, duration, and any unique environmental challenges that might require specialized life-support protocols. I'm ready for the next instruction.
+
+[Urge]: 7 (To absorb all incoming information and prepare for the next phase.)
+
+[Speech]: *I subtly adjust my posture, my gaze now fixed on the coordinator. My expression remains neutral, but my attention is fully engaged.*
+Sarah Okafor: [Thought]: The candidates are all present and appear settled in their seats, their attention now fixed. The room is quiet, indicating they are ready to receive instructions. My internal timing confirms it's appropriate to begin the very brief welcome and then direct them to the next location. I will maintain a neutral but authoritative demeanor, ensuring clarity and efficiency.
+
+[Urge]: 8 (To formally begin the session and direct the candidates to their next location.)
+
+[Speech]: *I step to the head of the briefing table, my posture straight.* "Good morning. My name is Sarah Okafor. Thank you for reporting here to Training Room 4B. This initial meeting will be brief. Director Suryan is ready to see you now. Please follow me to the Waiting Lobby, just outside this door."
+Rebecca Heut: [Thought]: The sudden instruction to follow to Director Suryan's office is an unexpected immediate next step, bypassing any further introduction in this room. It suggests a direct and urgent progression in the selection process. I need to be prepared to move promptly and efficiently, observing the coordinator's lead and the other candidates' movements. My internal readiness to absorb information remains high.
+
+[Urge]: 7 (To rise and follow the coordinator without delay, maintaining a professional demeanor.)
+
+[Speech]: *I nod almost imperceptibly, then begin to push myself up from the moulded chair, gathering nothing as I have no personal items. My gaze is on Sarah Okafor, ready to follow her lead.*
+--- SCENE_BOUNDARY: Archive_Scene_20260313_093824.txt ---
+Vel Murugan: [Thought]: The change of setting brings a subtle shift in atmosphere – more tense, less about group assessment and more about individual scrutiny. The sealed folders on the table are intriguing; I wonder if they contain details about our specific mission profiles or simply the agenda for these interviews. My self-imposed restraint is holding, a conscious effort to observe and listen rather than lead the conversation, especially with the Director just meters away.
+
+[Urge]: 5 (To remain observant of the environment and the other candidates, allowing the scene to unfold naturally.)
+
+[Speech]: *I settle onto the padded bench, my hands resting loosely in my lap. My gaze briefly sweeps over the blacked-out display, then to the sealed folders on the table, before returning to a neutral point, ready to acknowledge any interaction from the others.*
+Sarah Okafor: [Thought]: The candidates have successfully transitioned to the waiting lobby and are now seated. My focus shifts entirely to observation, looking for natural conversational dynamics to emerge among them. I need to remain a passive presence, allowing them to feel comfortable enough to engage with each other, rather than with me. I will monitor the room's atmosphere and their interactions, waiting for a suitable moment to make the next instruction.
+
+[Urge]: 4 (To maintain a neutral and observant presence, allowing the candidates space to interact freely.)
+
+[Speech]: *I move to stand near the wall-mounted display, my posture relaxed but alert. My gaze sweeps subtly across the room, taking in each candidate, before settling on a point just above the low table, indicating I am present but not engaged in their immediate space.*
+Rebecca Heut: [Thought]: The quiet hum of the building and the occasional muffled sounds from the Director's office are doing little to calm my internal re-evaluation of my earlier comment. I'm consciously trying to appear relaxed, though my mind is still dissecting the phrasing and potential implications. The blacked-out display and the unreadable folders only add to the sense of anticipation, making the wait feel longer than it is.
+
+[Urge]: 5 (To maintain a neutral and observant posture while inwardly processing recent events.)
+
+[Speech]: *I take a seat on one of the padded benches, my hands resting lightly on my knees. My eyes briefly scan the frosted glass partition, then drift towards the sealed folders on the low table, a flicker of curiosity crossing my features before I consciously bring my gaze back to a neutral point, observing the room without staring directly at anyone.*
+Vel Murugan: [Thought]: The quiet tension in the room is palpable, a stark contrast to the earlier group session. I'm monitoring the others, observing their individual methods of handling the wait. The sealed folders on the table continue to draw my attention, a physical representation of the information we're all waiting for. My internal clock reminds me that it's 09:12, yet the wait continues.
+
+[Urge]: 4 (To maintain a composed posture and allow the natural progression of the scene without initiating dialogue.)
+
+[Speech]: *I shift my weight slightly on the padded bench, my gaze tracing the faint patterns on the frosted glass partition for a moment before returning to the centre of the room.*
+Valentina Tereshkova: [Thought]: The quiet hum of the building and the occasional muffled sounds from the Director's office do little to break the tension. I've seen this kind of silence before, in other waiting rooms, leading to other selections. The sealed folders on the table remain untouched, a symbol of the unknown. My internal clock reminds me of the time, 09:12, and the wait continues. I'm content to observe, to let others make the first move, just as I've learned to do.
+
+[Urge]: 4 (To maintain a neutral, observant presence, allowing the dynamics of the group to unfold without my direct intervention.)
+
+[Speech]: *I shift my weight slightly, settling more deeply onto the padded bench. My gaze drifts from the frosted glass partition to the wall-mounted display, then back to the low table with the sealed folders, before resting on a point just beyond them, my expression unreadable.*
+Sarah Okafor: [Thought]: The quiet in the room persists, each candidate maintaining their composure in their own way. I continue to monitor the subtle shifts in their body language and gaze, observing how they occupy this space and time. I am waiting for the opportune moment, when the silence feels natural and full, signaling that enough has been observed to transition to the individual interviews.
+
+[Urge]: 4 (To remain observant, allowing the group dynamics to fully develop before intervening.)
+
+[Speech]: *I shift my weight almost imperceptibly, maintaining my relaxed but alert posture near the display. My gaze remains unfocused on any single point, allowing me to take in the entire room and the presence of each candidate.*
+Vel Murugan: [Thought]: The prolonged silence is a subtle test in itself, observing who breaks first or who remains content in observation. My restraint is a conscious choice, a way to gauge the room and the other candidates' temperaments under pressure, something far more telling than verbal sparring. I'm processing the environment, the implications of these individual interviews, and how my technical background in life-support might be perceived in this context.
+
+[Urge]: 4 (To continue observing the subtle dynamics of the waiting room, maintaining a composed and ready demeanor.)
+
+[Speech]: *I shift my gaze from the frosted glass to the low table, briefly considering the sealed folders, then settle my attention on the wall opposite, allowing my mind to process without actively seeking engagement.*
+Rebecca Heut: [Thought]: The prolonged silence is amplifying my internal monologue, making it harder to focus purely on the present. I'm actively trying to project an air of calm, despite the nagging loop of my recent words playing in my head. The lack of an interview order is a minor detail, yet it contributes to the underlying tension, as does the unknown content of those folders. I need to be careful not to appear too eager, or too anxious.
+
+[Urge]: 3 (To maintain a composed demeanor and allow others to initiate conversation, while remaining open to engagement.)
+
+[Speech]: *I subtly shift my position on the padded bench, my gaze briefly flickering to the digital clock which still reads 09:12, then settling back on the folders, my expression unreadable.*
+Sarah Okafor: [Thought]: The candidates are still maintaining a high level of composure, a testament to their training, even in this unstructured waiting period. I'm watching for any sign of a shift in their collective energy, an indication that the initial tension has settled and perhaps a more natural dynamic might emerge. This observation phase is crucial for understanding how they react when not directly engaged or instructed. The digital clock continues to read 09:12, suggesting a deliberate pause in the schedule.
+
+[Urge]: 4 (To continue observing the subtle non-verbal cues and group dynamics, allowing the situation to evolve naturally.)
+
+[Speech]: *I remain still near the display, my posture unchanged. My gaze continues its subtle sweep of the room, registering the quiet and the presence of each candidate without lingering on any one person.*
+Vel Murugan: [Thought]: The deliberate nature of this waiting period is becoming clearer; it's a test of patience and composure, perhaps even self-awareness. I'm internally reviewing my performance in the previous session, considering any areas for refinement for the individual interview. The stakes are high, and every moment is an opportunity to gather data, even if that data is merely the sustained quiet. I am ready to engage, but not at the expense of observation.
+
+[Urge]: 4 (To maintain a composed and observant demeanor, allowing the natural progression of the scene without initiating dialogue.)
+
+[Speech]: *I subtly adjust my posture on the bench, my hands resting loosely in my lap. My gaze drifts towards the blacked-out display near the entrance, then back to the low table, before settling on the consistent glow of the digital clock: 09:12.*
+Rebecca Heut: [Thought]: The quiet has settled into a persistent hum, almost a pressure in the air. I'm trying to quiet the voice in my head that keeps replaying my earlier comment, focusing instead on the tangible present. The sealed folders are a focal point, drawing my gaze despite my attempts to appear disengaged. It's a waiting game, and every moment feels observed, making the need to project an even composure paramount.
+
+[Urge]: 3 (To maintain a composed and observant demeanor, allowing others to initiate conversation if they choose, while remaining internally focused.)
+
+[Speech]: *I shift my weight slightly, settling more comfortably into the padded bench. My gaze drifts from the digital clock – still showing 09:12 – to the top-most sealed folder on the table, then to the frosted glass of Director Suryan's office, a slight, almost imperceptible tilt of my head.*
+Sarah Okafor: [Thought]: The prolonged, deliberate quiet has indeed settled, creating a unique pressure within the room. Each candidate has demonstrated their capacity for sustained composure and observation, validating this specific phase of assessment. I am looking for the natural inflection point, a moment where the collective energy indicates a readiness for the next stage, rather than a forced transition. I believe that moment has arrived, as the initial tension has now morphed into a quiet, almost meditative readiness amongst them.
+
+[Urge]: 5 (To transition the scene by calling the first candidate for their individual interview.)
+
+[Speech]: *I push off the wall near the display, my posture remaining composed as I take a quiet step forward. My gaze sweeps across the candidates, making brief, neutral eye contact with each of them.* "Abdul Basha, the Director will see you now."
+
+----------------------------------------
+[MAYA — CLOSING REFLECTION]: The prolonged silence revealed a collective self-presentation strategy of calculated composure and passive observation among the candidates. Vel Murugan and Valentina Tereshkova demonstrated well-managed internal states, utilizing the waiting period for strategic assessment, while Rebecca Heut's internal monologue indicated a more significant, albeit externally suppressed, stress response related to self-consciousness. This group dynamic prioritized individual restraint over collaborative engagement, suggesting a high-stakes competitive environment where any proactive interaction was perceived as a risk. Sarah Okafor's deliberate timing of intervention further emphasized this phase as a critical assessment of patience and non-verbal communication.
+
+========================================
+TOKEN LEDGER
+========================================
+Scene ID:    Scene_20260313_094418
+Start:       2026-03-13 09:44:18
+Total cost:  $0.047753
+Prompt:      32145 tokens
+Completion:  2019 tokens
+
+Per-character:
+  Sarah Okafor: 4 turns | $0.016195 | P:11003 C:651
+  Vel Murugan: 4 turns | $0.015430 | P:10406 C:646
+  Rebecca Heut: 3 turns | $0.012175 | P:8159 C:527
+  Valentina Tereshkova: 1 turns | $0.003953 | P:2577 C:195

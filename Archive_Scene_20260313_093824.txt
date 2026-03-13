@@ -1,0 +1,48 @@
+--- NOAH'S ARK MISSION ARCHIVE ---
+TIMESTAMP: 20260313_093824
+ENVIRONMENT: Astronaut Training Room 4B — International Space Agency, Ground Operations Facility. A compact, clinical room: white walls, recessed fluorescent lighting, a central briefing table with six moulded chairs, wall-mounted mission schematics. A single door leads directly to the Waiting Lobby outside Director Suryan's office — no corridor, no walk. The room smells faintly of antiseptic and recycled air. A digital clock reads 09:05.
+OBJECTIVE: Four candidates have arrived at Training Room 4B for pre-mission orientation. A mission coordinator is managing the session. The candidates know only that they were shortlisted and told to report here at 09:00. The scene reaches its natural end the moment the coordinator announces departure and the candidates begin to rise and follow — that moment of collective movement is the close.
+----------------------------------------
+
+Vel Murugan: [Thought]: The antiseptic smell is strong, almost clinical, which is fitting for a training environment. I'm noting the delayed start — 09:05 now. Punctuality is usually paramount. I've taken a seat at the table, maintaining a neutral posture, observing the others who have arrived. My mind is already running through protocols, assessing the room, the potential implications of the surroundings. I'm here for a mission, whatever it entails, and my role is to keep things stable.
+
+[Urge]: 4 (To remain observant and await instruction.)
+
+[Speech]: *I shift slightly in my moulded chair, my gaze sweeping over the wall-mounted schematics briefly before returning to the centre of the table.*
+Rebecca Heut: [Thought]: The slight delay is notable for an organization as precise as ISA. I've taken a seat, observing the room and the other candidates present. The smell of antiseptic is quite strong, reinforcing the sterile, functional environment. My focus remains on awaiting information; I don't know what this orientation entails, but I am ready to absorb whatever comes.
+
+[Urge]: 4 (To remain observant and prepared for the session to begin.)
+
+[Speech]: *I adjust my posture in the moulded chair, my gaze resting on the central briefing table. I keep my hands clasped loosely in my lap, a neutral expression on my face.*
+Vel Murugan: [Thought]: The coordinator's presence indicates the session is formally beginning. I will shift my focus from general observation to active listening, ensuring I catch every detail of the introduction. My internal processes are already preparing to catalog information regarding mission type, duration, and any unique environmental challenges that might require specialized life-support protocols. I'm ready for the next instruction.
+
+[Urge]: 7 (To absorb all incoming information and prepare for the next phase.)
+
+[Speech]: *I subtly adjust my posture, my gaze now fixed on the coordinator. My expression remains neutral, but my attention is fully engaged.*
+Sarah Okafor: [Thought]: The candidates are all present and appear settled in their seats, their attention now fixed. The room is quiet, indicating they are ready to receive instructions. My internal timing confirms it's appropriate to begin the very brief welcome and then direct them to the next location. I will maintain a neutral but authoritative demeanor, ensuring clarity and efficiency.
+
+[Urge]: 8 (To formally begin the session and direct the candidates to their next location.)
+
+[Speech]: *I step to the head of the briefing table, my posture straight.* "Good morning. My name is Sarah Okafor. Thank you for reporting here to Training Room 4B. This initial meeting will be brief. Director Suryan is ready to see you now. Please follow me to the Waiting Lobby, just outside this door."
+Rebecca Heut: [Thought]: The sudden instruction to follow to Director Suryan's office is an unexpected immediate next step, bypassing any further introduction in this room. It suggests a direct and urgent progression in the selection process. I need to be prepared to move promptly and efficiently, observing the coordinator's lead and the other candidates' movements. My internal readiness to absorb information remains high.
+
+[Urge]: 7 (To rise and follow the coordinator without delay, maintaining a professional demeanor.)
+
+[Speech]: *I nod almost imperceptibly, then begin to push myself up from the moulded chair, gathering nothing as I have no personal items. My gaze is on Sarah Okafor, ready to follow her lead.*
+
+----------------------------------------
+[MAYA — CLOSING REFLECTION]: The candidates consistently demonstrated high self-regulation and a proactive readiness for instruction, with both Vel Murugan and Rebecca Heut rapidly shifting cognitive focus from passive observation to immediate, coordinated action upon receiving Sarah Okafor's directive. Their neutral self-presentation and efficient response to an unexpected protocol change reflect a strong internalized professional ethos. This collective behavioral pattern indicates a low-friction group dynamic, prioritizing swift adherence to emergent instruction.
+
+========================================
+TOKEN LEDGER
+========================================
+Scene ID:    Scene_20260313_093746
+Start:       2026-03-13 09:37:46
+Total cost:  $0.011244
+Prompt:      6823 tokens
+Completion:  724 tokens
+
+Per-character:
+  Rebecca Heut: 2 turns | $0.004705 | P:2918 C:282
+  Vel Murugan: 2 turns | $0.004060 | P:2414 C:278
+  Sarah Okafor: 1 turns | $0.002479 | P:1491 C:164
