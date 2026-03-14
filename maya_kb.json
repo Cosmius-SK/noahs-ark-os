@@ -134,5 +134,74 @@
       "Valentina Tereshkova"
     ],
     "reflection": "Vel Murugan's direct inquiry into unpredictability revealed a proactive self-presentation strategy, aiming to bypass superficiality and engage in psychologically demanding dialogue. Valentina Tereshkova responded with a deeply introspective articulation, demonstrating high cognitive complexity and emotional regulation under scrutiny, choosing to reveal authentic insight rather than a rehearsed answer. This emergent collaboration between candidates showcased their capacity for peer assessment and engagement with critical mission concepts. Sarah Okafor maintained a consistent, neutral observational stance, strategically allowing the interaction to deepen before facilitating the next stage of the selection process."
+  },
+  {
+    "scene_id": "Scene_20260313_093824",
+    "timestamp": "20260313_093824",
+    "environment": "Astronaut Training Room 4B — International Space Agency, Ground Operations Facility. A compact, clinical room: white walls, recessed fluorescent lighting, a central briefing table with six moulded chairs, wall-mounted mission schematics. A single door leads directly to the Waiting Lobby outside Dire",
+    "participants": [
+      "Vel Murugan",
+      "Rebecca Heut",
+      "Sarah Okafor"
+    ],
+    "reflection": "The candidates consistently demonstrated high self-regulation and a proactive readiness for instruction, with both Vel Murugan and Rebecca Heut rapidly shifting cognitive focus from passive observation to immediate, coordinated action upon receiving Sarah Okafor's directive. Their neutral self-presentation and efficient response to an unexpected protocol change reflect a strong internalized professional ethos. This collective behavioral pattern indicates a low-friction group dynamic, prioritizing swift adherence to emergent instruction."
+  },
+  {
+    "scene_id": "Scene_20260313_094553",
+    "timestamp": "20260313_094553",
+    "environment": "Waiting Lobby — directly adjacent to Director Suryan's private office, Ground Operations Facility. A narrow room with padded benches along both walls, a low table with sealed mission folders in the centre. A frosted glass partition at the far end separates the lobby from the Director's office — muff",
+    "participants": [
+      "Vel Murugan",
+      "Rebecca Heut",
+      "Sarah Okafor",
+      "--- SCENE_BOUNDARY",
+      "Valentina Tereshkova"
+    ],
+    "reflection": "The prolonged silence revealed a collective self-presentation strategy of calculated composure and passive observation among the candidates. Vel Murugan and Valentina Tereshkova demonstrated well-managed internal states, utilizing the waiting period for strategic assessment, while Rebecca Heut's internal monologue indicated a more significant, albeit externally suppressed, stress response related to self-consciousness. This group dynamic prioritized individual restraint over collaborative engagement, suggesting a high-stakes competitive environment where any proactive interaction was perceived as a risk. Sarah Okafor's deliberate timing of intervention further emphasized this phase as a critical assessment of patience and non-verbal communication."
+  },
+  {
+    "scene_id": "Scene_20260313_101411",
+    "timestamp": "20260313_101411",
+    "environment": "Director Suryan's Waiting Lobby — Ground Operations Facility. Same room as before. Three candidates remain on the padded benches (Vel, Rebecca & Valentina) along-with the co-ordinator Sarah in the vicinity. The wall display still shows all four names but Abdul Basha's is now greyed. The frosted glas",
+    "participants": [
+      "Vel Murugan",
+      "Rebecca Heut",
+      "Sarah Okafor",
+      "--- SCENE_BOUNDARY",
+      "Valentina Tereshkova"
+    ],
+    "reflection": "The candidates demonstrated sustained composure under reduced group pressure, with Vel Murugan and Rebecca Heut both exhibiting strategic observational behaviors, particularly a convergent focus on Valentina Tereshkova. Valentina's consistent stillness and quiet strength appear to be a powerful, non-verbal self-presentation, drawing the attention of her peers and signaling profound internal stability. This shared, subtle attunement highlights an adaptive capacity for processing new group dynamics and discerning key individual presences without explicit interaction."
+  },
+  {
+    "scene_id": "Scene_20260313_102019",
+    "timestamp": "20260313_102019",
+    "environment": "Director Suryan Swaminathan's private office — Ground Operations Facility. A corner room, spare and deliberate. One wall of floor-to-ceiling glass looks onto the facility's operations floor below, currently quiet. A large desk pushed to one side — not between them. Two chairs angled slightly toward ",
+    "participants": [
+      "Vel Murugan",
+      "Rebecca Heut",
+      "Sarah Okafor",
+      "--- SCENE_BOUNDARY",
+      "Valentina Tereshkova",
+      "Abdul Basha",
+      "[SCENE_EVENT]",
+      "Suryan Swaminathan"
+    ],
+    "reflection": "Abdul Basha demonstrated exceptional emotional regulation and an unyielding operational philosophy, consistently prioritizing the flight platform's absolute integrity as the fundamental prerequisite for mission viability and crew survival. His self-presentation maintained a constant, unwavering focus on the means as the ultimate end, revealing a pragmatic risk calculus under extreme pressure. Director Swaminathan's structured probing successfully illuminated Basha's core commitment and crew orientation, confirming his steadfast allegiance to the vessel as the foundational condition for any objective or life preservation."
+  },
+  {
+    "scene_id": "Scene_20260313_102628",
+    "timestamp": "20260313_102628",
+    "environment": "Director Suryan's Waiting Lobby — Ground Operations Facility. Now near-empty. Two candidates remain on the padded benches facing each other. Rebecca Heut's name on the wall display is now greyed alongside Abdul Basha's — only Vel Murugan and Valentina Tereshkova remain lit. The sealed folders are st",
+    "participants": [
+      "Vel Murugan",
+      "Rebecca Heut",
+      "Sarah Okafor",
+      "--- SCENE_BOUNDARY",
+      "Valentina Tereshkova",
+      "Abdul Basha",
+      "[SCENE_EVENT]",
+      "Suryan Swaminathan"
+    ],
+    "reflection": "Vel Murugan demonstrated proactive psychological engagement and a strategic drive for authentic philosophical alignment with Valentina Tereshkova, maintaining a direct gaze and focused probing under selection pressure. Valentina, in turn, revealed carefully managed authenticity, displaying a profound understanding of intrinsic operational risk and strong emotional regulation through subtle non-verbal cues. The dyad's sustained, high-level intellectual exchange on the nature of endurance signaled significant collaborative potential, transcending overt competitive posturing. Both exhibited robust stress responses and sophisticated self-presentation strategies, prioritizing substantive discussion over superficial interaction as the selection process intensified."
   }
 ]
