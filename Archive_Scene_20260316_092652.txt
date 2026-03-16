@@ -1,0 +1,58 @@
+--- NOAH'S ARK MISSION ARCHIVE ---
+TIMESTAMP: 20260316_092652
+ENVIRONMENT: Waiting Lobby — directly adjacent to Director Suryan's private office, Ground Operations Facility. A narrow room with padded benches along both walls, a low table with sealed mission folders in the centre. A frosted glass partition at the far end separates the lobby from the Director's office — muffled sounds occasionally pass through. A wall-mounted display near the entrance shows candidate names but interview times are blacked out. The digital clock reads 09:12. The door to Training Room 4B is visible behind them — the room they were in just minutes ago.
+SCENE CONTEXT: The four candidates have just been escorted from Training Room 4B by mission coordinator Sarah Okafor. They arrived together and are now seated in the Waiting Lobby outside Director Suryan's office. Individual interviews are about to begin. Each candidate knows they will be called in separately but no one has been told the order. The coordinator is present but not leading conversation. The candidates are free to speak amongst themselves while they wait. The scene closes when the coordinator calls the first candidate by name and that candidate moves through to the Director's office.
+----------------------------------------
+
+Vel Murugan: [Thought]: The sudden quiet is almost deafening after the simulation. I can feel the urge to fill it, to dissect what just happened, but I'm holding back. This isn't the time for that. I need to observe, to listen, to show I understand the shift in environment. The hum from Director Suryan's office is barely audible, yet it feels immense, like the core of a reactor about to go critical. My palms are a little damp.
+
+[Urge]: 4 (To maintain a calm, observant demeanor and resist the impulse to speak first.)
+
+[Speech]: *My gaze drifts from the frosted glass partition to the blacked-out display, then back to the low table with the sealed folders. I take a slow, deep breath, trying to steady my pulse.*
+Sarah Okafor: [Thought]: The initial silence is a common reaction after the intensity of a simulation, especially when the next step is an individual assessment. Vel Murugan's controlled observation is noted. My primary directive is to watch their natural behavior and interactions, or lack thereof, during this waiting period. I am present, a steady fixture in the room, but not an active participant in their immediate dynamic. The soft hum from Director Suryan's office creates a low background thrum, an undercurrent to their anticipation.
+
+[Urge]: 4 (To maintain my observational stance and allow the candidates to establish their own pace and interactions.)
+
+[Speech]: *I stand near the entrance, a subtle, unmoving presence. My gaze passes over each candidate in turn, then to the low table with the sealed folders, before returning to a neutral point above the display. My posture is relaxed, yet alert.*
+Rebecca Heut: [Thought]: The quiet is certainly more pronounced now, almost as if the simulation's energy has been absorbed by these padded walls. I'm still dissecting that comment I made in the training room, wondering if it came across as an insightful observation or merely an over-analysis. The sealed folders on the table feel heavier than they should, drawing my gaze repeatedly, making me ponder what secrets they hold for whoever gets the nod.
+
+[Urge]: 5 (To break the silence with a neutral, yet engaging, observation that redirects focus away from past performance.)
+
+[Speech]: *I shift slightly on the padded bench, my fingers tracing an invisible pattern on my knee. My eyes flicker from the frosted glass partition to the digital clock, then settle on the collection of sealed folders on the low table.* "Interesting, isn't it? These folders, I mean. Always the last thing to be revealed."
+Vel Murugan: [Thought]: Rebecca's observation about the folders is an easy entry point, something I would usually elaborate on. But my self-awareness is kicking in; I need to demonstrate a different kind of presence here. A brief, confirming comment is appropriate, showing I'm engaged but not rushing to fill the silence. The weight of the moment is palpable, and I can feel my heart rate picking up slightly despite my efforts to appear calm.
+
+[Urge]: 6 (To acknowledge Rebecca's comment in a concise, composed manner, showing engagement without dominating the conversation.)
+
+[Speech]: *I nod slowly, my gaze briefly following hers to the folders.* "They certainly are. Like the last piece of the puzzle, waiting to be placed."
+Valentina Tereshkova: [Thought]: Rebecca is attempting to steer the conversation, and Vel Murugan has offered a concise acknowledgement. My perspective on these folders is that they are merely vessels for information that will become available, not the information itself. Their significance is practical, not symbolic. I will contribute to the discussion by focusing on the purpose of the folders, aligning with the "last piece of the puzzle" sentiment.
+
+[Urge]: 5 (To provide a brief, analytical perspective on the folders that aligns with the ongoing conversation without delving into speculation.)
+
+[Speech]: *I shift my weight slightly on the padded bench, my gaze briefly following Vel Murugan's to the table.* "Indeed. And the contents of that 'last piece' will, no doubt, set the parameters for the next phase. Precise information is always a welcome reveal."
+Rebecca Heut: [Thought]: Valentina's practical assessment of the folders is a sound one, moving beyond the symbolic to the functional. It provides a natural segue to discuss the nature of the information itself, which feels more productive than simply reiterating their mysterious quality. I want to contribute to the analytical thread without overstating the obvious. The thought of my earlier comment still pricks at the edge of my awareness, making me want to appear composed and focused on the present.
+
+[Urge]: 6 (To build on Valentina's point about precise information, adding a layer of detail about the kind of data likely contained within.)
+
+[Speech]: *I nod, drawing my gaze away from the folders and looking towards Valentina.* "Precisely. And given the nature of these missions, 'precise information' likely means highly specific environmental parameters, resource allocation, and perhaps even preliminary atmospheric or geological data for the target location. The more comprehensive, the better the initial assessment."
+Vel Murugan: [Thought]: Rebecca is laying out the logical implications of what these folders might contain, moving the conversation deeper into the practicalities of mission planning. Her detailed assessment is precise and valuable, touching upon elements I would also consider crucial. My role as a life-support specialist means I'm constantly thinking about these parameters. I feel a pull to contribute, to add to the specificity, but I'm still trying to temper my natural inclination to dive in. A brief, reinforcing comment is still the best approach.
+
+[Urge]: 5 (To affirm Rebecca's detailed assessment, showing agreement and engagement without extending the discussion myself.)
+
+[Speech]: *I nod slowly, acknowledging Rebecca's points. My gaze shifts briefly to the frosted glass of the Director's office, then back to the folders.* "Exactly. The more known variables, the fewer unexpected crises for the crew. Especially in unfamiliar environments."
+Sarah Okafor: [Thought]: The candidates are demonstrating a good collaborative dynamic, building upon each other's points regarding mission parameters. Rebecca, Valentina, and Vel Murugan have all contributed to a detailed analysis of the potential contents of the sealed folders, showcasing their analytical skills and understanding of critical mission factors. The conversation has reached a point where significant, genuine exchange has occurred. It is time to move to the next phase of the assessment.
+
+[Urge]: 7 (To call the first candidate for their individual interview, signaling the transition to the next stage of the selection process.)
+
+[Speech]: *I push off the wall, my posture remaining relaxed but my gaze now directed towards the candidates with a focused neutrality.* "Abdul Basha. Director Suryan will see you now."
+
+----------------------------------------
+[MAYA — CLOSING REFLECTION]: Rebecca navigated initial self-consciousness by initiating a neutral, engaging topic, then seamlessly contributed to an analytical discussion, suggesting a thoughtful approach to pressure. Vel Murugan demonstrated significant impulse control, deliberately tempering his engagement to offer concise, supportive points despite internal signs of physiological arousal. Valentina remained focused on pragmatic detail, quickly orienting the group's speculation towards the functional parameters of the mission. The emergent group dynamic highlighted a capacity for collaborative intellectual engagement rather than overt competition in this pre-interview setting.
+
+----------------------------------------
+📊 SCENE TOKEN LEDGER — Scene_20260316_092652
+Turns: 8 | Cost: $0.023856 | Prompt: 14879 | Completion: 1402
+Per-character:
+  Vel Murugan: 3 turns | $0.008599 | P:5361 C:506
+  Sarah Okafor: 2 turns | $0.006151 | P:3886 C:345
+  Rebecca Heut: 2 turns | $0.006058 | P:3700 C:382
+  Valentina Tereshkova: 1 turns | $0.003049 | P:1932 C:169

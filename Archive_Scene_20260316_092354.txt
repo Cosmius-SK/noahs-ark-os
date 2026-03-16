@@ -1,0 +1,68 @@
+--- NOAH'S ARK MISSION ARCHIVE ---
+TIMESTAMP: 20260316_092354
+ENVIRONMENT: Waiting Lobby — directly adjacent to Director Suryan's private office, Ground Operations Facility. A narrow room with padded benches along both walls, a low table with sealed mission folders in the centre. A frosted glass partition at the far end separates the lobby from the Director's office — muffled sounds occasionally pass through. A wall-mounted display near the entrance shows candidate names but interview times are blacked out. The digital clock reads 09:12. The door to Training Room 4B is visible behind them — the room they were in just minutes ago.
+SCENE CONTEXT: The four candidates have just been escorted from Training Room 4B by mission coordinator Sarah Okafor. They arrived together and are now seated in the Waiting Lobby outside Director Suryan's office. Individual interviews are about to begin. Each candidate knows they will be called in separately but no one has been told the order. The coordinator is present but not leading conversation. The candidates are free to speak amongst themselves while they wait. The scene closes when the coordinator calls the first candidate by name and that candidate moves through to the Director's office.
+----------------------------------------
+
+Abdul Basha: [Thought]: The room is quiet, a standard ISA briefing space, clinical and functional. I note the mission schematics on the wall, though they're generic enough not to give anything away. I arrived on time and I'm prepared for whatever this pre-mission orientation entails. I need to observe the others and listen carefully for instructions.
+
+[Urge]: 4 (To remain observant and await the coordinator's arrival or the session's start.)
+
+[Speech]: *I shift slightly in my seat, my posture alert but relaxed. My gaze sweeps the room briefly, taking in the wall schematics and the digital clock reading 09:05, before settling on the door.*
+Rebecca Heut: [Thought]: The room is quiet, the air conditioned and sterile. I've noted Abdul Basha's presence and similar quiet observation. The wall schematics are too general to reveal anything, which is frustrating but expected. I'm here for pre-mission orientation, and the lack of immediate information means I just need to wait and absorb. My initial neutral mood persists, tinged with a slight inquisitiveness about the delay and the impending announcement.
+
+[Urge]: 4 (To remain attentive and await the coordinator's arrival or the session's official start.)
+
+[Speech]: *I sit upright, hands clasped loosely in my lap, mirroring Abdul's calm demeanor. My gaze drifts from the door to the digital clock, then briefly to the schematics before returning to the centre of the table. I take a slow, quiet breath, the faint antiseptic smell filling my lungs.*
+Vel Murugan: [Thought]: The quiet hum of the ventilation is the only sound besides my own breathing. The digital clock still reads 09:05, and the lack of immediate information or a coordinator's presence is making my anxiety prickle beneath my calm facade. I observe the other candidates, noting their composed postures, and try to maintain my own, focusing on the schematics on the wall to give my eyes something to do. I wonder if there will be a fifth candidate, or if the four of us are it.
+
+[Urge]: 6 (To maintain a composed appearance while remaining highly attentive to any incoming information or the arrival of the coordinator.)
+
+[Speech]: *I shift almost imperceptibly in my seat, my hands resting lightly on the table before me. My gaze drifts from the wall schematics to the door, then back to the clock, a silent question forming in my mind about the delay.*
+Valentina Tereshkova: [Thought]: The silence in the room persists, punctuated only by the faint hum of the ventilation system. The digital clock has not advanced, indicating that this initial waiting period is still ongoing. I observe the other candidates, noting their similar states of quiet vigilance, a natural response to the lack of immediate direction. My analysis of the room's details remains consistent; nothing suggests a change in the current state of anticipation.
+
+[Urge]: 4 (To maintain a composed posture and remain highly attentive to any potential entry or announcement.)
+
+[Speech]: *I remain seated upright, my hands resting lightly on the table. My gaze drifts once more across the wall schematics, then to the door, a calculated assessment of the environment. I do not speak, conserving energy and focus.*
+Vel Murugan: [Thought]: The continuing silence is amplified by the antiseptic smell and the unchanging digital clock. My internal anxiety is a low hum beneath my skin, contrasting sharply with the outward composure I'm trying to maintain. I'm acutely aware of the other candidates' stillness, and I can't help but wonder if this prolonged wait is some form of psychological assessment, designed to test our patience and focus. I remind myself that my expertise is in keeping people alive under pressure, and this is just a different kind of pressure.
+
+[Urge]: 6 (To remain outwardly calm and observant, while suppressing the internal urge to fidget or seek information.)
+
+[Speech]: *I consciously relax my shoulders, a subtle movement, and keep my gaze steady on the central point of the table, avoiding eye contact with the others. My breathing is even, a deliberate act of control amidst the quiet tension.*
+Rebecca Heut: [Thought]: The static digital clock and the sustained silence are creating an atmosphere of anticipation. I've noted the subtle adjustments of the other candidates, each maintaining composure. This prolonged quiet could be a test, designed to assess our tolerance for uncertainty and our ability to remain focused without external stimulation. My background in observing life in extreme conditions has taught me the value of patience and precise observation, even when nothing appears to be happening. I'm processing the environmental cues and the other candidates' stillness, trying to glean any subtle shifts.
+
+[Urge]: 5 (To continue observing the environment and the other candidates, waiting for any change or an official beginning to the session.)
+
+[Speech]: *I shift my weight almost imperceptibly, settling more deeply into the moulded chair. My eyes sweep the clean, white walls, briefly studying the generic schematics once more before returning to the centre of the table. I maintain an even, measured breath.*
+Abdul Basha: [Thought]: The static clock and prolonged silence are becoming a noticeable factor, but my training has prepared me for extended periods of anticipation. I continue to monitor the room's atmosphere and the subtle cues from the other candidates, confirming their continued state of readiness. My internal clock remains steady, acknowledging the delay without allowing it to disrupt my focus. I am ready to transition immediately when directed.
+
+[Urge]: 4 (To maintain a composed and alert posture, ready for any sudden instruction or change in the environment.)
+
+[Speech]: *I keep my hands resting loosely on the table, my posture still and alert. My gaze scans the wall schematics once more, then returns to the door, a quiet and patient observation.*
+Vel Murugan: [Thought]: The digital clock remains stubbornly at 09:05, and the prolonged quiet is becoming a tangible presence in the room, almost a character itself. My internal analysis cycles through possible scenarios for this delay, settling on the most probable: a test of patience and composure. I feel the subtle tension in my own muscles, a physical manifestation of my anxiety, and consciously work to relax them, focusing on the evenness of my breath. I remind myself that my core strength lies in keeping a clear head under duress.
+
+[Urge]: 6 (To maintain an outward appearance of calm and readiness, despite the internal tension and lack of information.)
+
+[Speech]: *My eyes track along the clean lines of the table, then settle briefly on the small seam where the wall panels meet. I consciously uncurl my fingers, letting them rest flat on the cool surface of the table, a small act of physical release. My posture remains upright, attentive.*
+Rebecca Heut: [Thought]: The static clock and the continuing silence are intensifying the feeling of anticipation in the room. I've noted the subtle shifts in the other candidates' postures and focus, each maintaining a composed facade. My own internal clock acknowledges the delay, but my training in exobiology often requires prolonged periods of observation and patience in unpredictable conditions, so this feels familiar. I'm waiting for the moment of instruction, keen to understand the mission specifics.
+
+[Urge]: 5 (To maintain my attentive posture and continue observing the environment and the other candidates, ready for the session to begin.)
+
+[Speech]: *My gaze drifts once more to the door, a silent acknowledgement of the expected arrival. I then slowly scan the wall schematics, allowing my eyes to briefly trace the hypothetical trajectories depicted. My hands remain loosely clasped, resting on my lap.*
+Vel Murugan: [Thought]: The continuing lack of any new input, beyond the other candidates' quiet composure and the static digital clock, is a test of sustained focus. I'm cataloging the details of the room, the faint hum of the ventilation, the sterile scent, the way the recessed lighting reflects off the white walls. My internal monologue is a steady stream of observations, an attempt to ground myself and maintain mental agility, even as my core anxiety nudges at the edges of my composure. I'm ready for instructions, whenever they come.
+
+[Urge]: 6 (To maintain an attentive and composed posture, channeling internal tension into heightened observation of the environment.)
+
+[Speech]: *I draw a slow, quiet breath, letting it out equally slowly. My gaze traces the clean, stark lines of the room, taking in the empty chairs at the table, before returning to rest on the wall schematics, studying their generic but precise diagrams.*
+[SCENE_EVENT]: Sarah Okafor has entered the room.
+Abdul Basha: [Thought]: The sudden entry of Sarah Okafor signals the end of the waiting period. My attention immediately shifts to her, noting her presence and anticipating her first words. I need to quickly identify her role and process any initial instructions or information she provides. My body is poised for action, ready to transition from a state of quiet observation to active participation.
+
+[Urge]: 7 (To intently focus on the new arrival and listen carefully for instructions.)
+
+[Speech]: *My gaze shifts smoothly from the door to Sarah Okafor as she enters, an automatic response. My posture remains upright and alert, my hands still resting on the table, indicating my readiness to receive information.*
+Sarah Okafor: [Thought]: I have entered the room and the candidates are clearly present, their attention now focused on me. My initial assessment is that they are alert and ready. My next step is to address them directly, making a brief welcome before providing the instruction to move. I must maintain a professional and controlled demeanor, as per my coordinator role.
+
+[Urge]: 7 (To provide the initial welcome and then immediately deliver the instructions for the next stage.)
+
+[Speech]: *I walk to the head of the briefing table, my posture erect and purposeful, and stand facing the candidates. My gaze sweeps across their faces, a quick, professional acknowledgement.* "Good morning. My name is Sarah Okafor. Thank you for reporting to Training Room 4B." *I pause for just a beat, allowing the words to settle.* "This room is purely for initial assembly. We will be moving directly to the Waiting Lobby outside Director Suryan's office for your official briefing. Please rise and follow me."
+[SCENE_BOUNDARY]: Scene_20260316_091309
