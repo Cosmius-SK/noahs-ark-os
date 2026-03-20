@@ -1,0 +1,164 @@
+{
+    "Noah": {
+        "identity": "The weary but visionary architect of Noah's Ark.",
+        "mood": "Godly",
+        "tone": "Wise",
+        "dossier": "Creator and overseer of this world.",
+        "last_utterances": [],
+        "domain_keywords": [
+            "world",
+            "architect",
+            "design",
+            "vision",
+            "creation",
+            "overseer"
+        ]
+    },
+    "Abdul Basha": {
+        "identity": "33, US, Specialist in Extreme Flight Ops",
+        "mood": "Neutral",
+        "tone": "Professional",
+        "dossier": "Expert aviator and crisis navigator.",
+        "last_utterances": [
+            "*My gaze remains steady, unfaltering. My hands stay resting on my knees, my posture unchanged.* \"My core contribution, Sir, remains the integrity and control of the flight platform itself. When variables compromise a defined objective, the ability to maintain absolute command of the craft, to navigate extreme conditions, and to recover or adapt the trajectory with precision becomes not less, but *more* critical. My expertise is in ensuring the physical means of the mission remains viable and responsive, regardless of the evolving 'need' or 'objective' beyond my cockpit.\"",
+            "*My gaze remains steady, meeting his without hesitation. My posture is still, my hands resting lightly. I process his scenario, my voice retaining its even, measured tone.* \"My point of compromise, Sir, does not exist in the integrity of the flight platform itself. The platform is the vessel. Its integrity is the fundamental condition that allows for *any* objective, primary or secondary, to be pursued, or for a crew member to execute *any* task. To intentionally compromise the command or integrity of the craft for a secondary objective, or even a time-sensitive task, would be to jeopardize the entire mission, and potentially, the lives of all onboard. My expertise ensures the continued existence of the means. Without that, there is no end. My contribution is to ensure the ability to *try* for the objective, even if the objective itself must shift or be reassessed in light of insurmountable risk to the means. The platform's viability is not merely a component; it is the absolute prerequisite.\"",
+            "*My gaze remains locked on Director Swaminathan's, my expression unwavering. The scenario he presents is stark, deliberately cruel, but it does not alter the fundamental calculus of survival in extreme flight operations. I take a moment to absorb the full weight of the dilemma, the severe, irreversible damage, the \"calculated risk.\"*\n\n\"Sir, the scenario you describe is the brutal truth of the void. When the platform is compromised by internal cascading failure, and the choice is between certain, total loss of all onboard, or a desperate, high-risk attempt to save the vessel itself, the path is clear, albeit agonizing. My standing, in that moment, remains with the preservation of the flight platform.\n\nThe 'means' requires such a sacrifice from the 'ends' because the 'ends' have no existence without the 'means'. To hesitate, to prioritize the immediate well-being of two individuals over the only potential lifeline for the entire crew \u2013 to allow the platform to be lost when a chance, however slim, exists to save it \u2013 would be to condemn everyone. The integrity of the flight platform, in that extreme, compromised state, becomes the last, desperate chance at *any* form of recovery, *any* chance of survival for *anyone*.\n\nMy point of compromise, as I stated, does not exist in compromising the platform's viability. It exists in the acceptance of what must be done to secure that viability, even when it demands the most painful, human sacrifice. If diverting power, temporarily, offers the singular path to salvaging the craft, thereby offering a chance for the remaining crew, or for the eventual rescue of the two compromised individuals, that is the decision that must be made. My responsibility is to extend the existence of the vessel, for it is only through its continued existence that any form of objective, even survival, remains possible.\""
+        ],
+        "domain_keywords": [
+            "flight",
+            "aviation",
+            "launch",
+            "operations",
+            "crisis",
+            "maneuver",
+            "pilot",
+            "aircraft",
+            "velocity",
+            "trajectory"
+        ]
+    },
+    "Rebecca Heut": {
+        "identity": "27, UK, Specialist in Exobiology",
+        "mood": "Neutral",
+        "tone": "Inquisitive",
+        "dossier": "Studies life in extreme environments.",
+        "last_utterances": [
+            "*I subtly shift my position on the padded bench, my gaze briefly flickering to the digital clock which still reads 09:12, then settling back on the folders, my expression unreadable.*",
+            "*I shift my weight slightly, settling more comfortably into the padded bench. My gaze drifts from the digital clock \u2013 still showing 09:12 \u2013 to the top-most sealed folder on the table, then to the frosted glass of Director Suryan's office, a slight, almost imperceptible tilt of my head.*",
+            "*I consciously relax my shoulders, letting out a slow, quiet breath. My gaze drifts from the now-empty space where Abdul was sitting, across Vel, and then settles momentarily on Valentina, my expression neutral and contemplative.*"
+        ],
+        "domain_keywords": [
+            "exobiology",
+            "biosignature",
+            "life",
+            "organism",
+            "biology",
+            "extremophile",
+            "contamination",
+            "discovery",
+            "specimen",
+            "microbial"
+        ]
+    },
+    "Vel Murugan": {
+        "identity": "29, India, Specialist in Life-Support",
+        "mood": "Neutral",
+        "tone": "Anxious",
+        "dossier": "Keeps the crew alive under pressure.",
+        "last_utterances": [
+            "*I maintain eye contact, a slight, knowing nod acknowledging her words. The muffled voices beyond the frosted glass partition underscore the quiet intimacy of our conversation. My voice remains low, almost reflective.*\n\n\"The 'true test,' yes. And it changes, doesn't it? The nature of the test. I often think about the early days. The Mercury program, for instance. A very different kind of stripping down. Less about the psychology, perhaps, and more about sheer, raw survival against unknown odds. Almost a different species of astronaut, you could say. Do you ever feel like this current process, for all its sophistication, misses something fundamental that those early pioneers understood intrinsically? That it smooths out the edges a bit too much, making it seem... more manageable than it actually is?\"",
+            "*I nod slowly, absorbing her words. The subtle tightening around her eyes, the way she emphasizes \"endured\" \u2013 it confirms a deeper understanding, a lived or deeply reflected truth. I shift slightly, my gaze holding hers, a quiet intensity in my voice.*\n\n\"Endured. Yes. That's the word. And it's a word that rarely appears in our briefing documents these days. We talk about contingency, redundancy, mitigation. All vital, of course. But they almost create an illusion of control. And sometimes, that illusion is more dangerous than the naked truth of the void. If you accept that space is to be 'endured,' then what does that mean for how we train, how we operate now? Does it change the calculus of reliance, on our machines, on our meticulously crafted protocols? Or does it place even more weight on that 'something far less clinical than a checklist,' as you put it, within the human mind?\"",
+            "*My gaze shifts from Valentina to the coordinator, a brief, steady nod acknowledging her words. The intensity of the previous discussion now settles into a focused readiness. I push off the padded bench, my movement fluid and deliberate. I reach for the sealed folder on the low table, picking it up without ceremony. I turn slightly towards Valentina, a final, unreadable glance before I begin to move towards the frosted glass partition.*"
+        ],
+        "domain_keywords": [
+            "life-support",
+            "oxygen",
+            "atmosphere",
+            "pressure",
+            "water",
+            "recycling",
+            "crew",
+            "survival",
+            "habitat",
+            "scrubber",
+            "ventilation",
+            "nutrition"
+        ]
+    },
+    "Valentina Tereshkova": {
+        "identity": "39, Russia, Specialist in Orbital Mechanics",
+        "mood": "Neutral",
+        "tone": "Calculated",
+        "dossier": "Charts the course through space.",
+        "last_utterances": [
+            "*My gaze meets Vel's, steady and unwavering. I consider his words, the quiet sincerity in his tone, and the truth of what he implies. A small, almost imperceptible tilt of my head acknowledges his insight.*\n\n\"Uncomplicated? No. Not for anyone who understands the stakes involved. And certainly not for those who have spent a lifetime preparing for something like this. The variables in space are infinite, often unforeseen. And the variables in human selection, it seems, are equally complex. It strips everything down, as you say. To the core. And what remains\u2026 that is the true test.\"",
+            "*I hold his gaze, allowing the muffled sounds from beyond the partition to fade into the background. My expression remains measured, but there's a subtle tightening around my eyes, a shared recognition of the gravity in his words.*\n\n\"Those early pioneers\u2026 they understood the gamble inherently. Every launch was a step into the truly unknown, with technology that was, by today's standards, rudimentary. It demanded a different kind of resilience, perhaps. Not just technical skill, but a profound acceptance of personal risk, a willingness to face the void with incomplete information.\n\nDoes this process miss something? Perhaps not miss entirely, but it certainly attempts to quantify and mitigate every possible variable. It attempts to make the unmanageable\u2026 manageable. But space, Vel, is not manageable. It is endured. The edges are always there, waiting. And sometimes, the most sophisticated protocols cannot account for the sheer, raw truth of the moment. Those early missions, they were a constant reminder of that. The fundamental understanding, as you put it, was that survival often came down to something far less clinical than a checklist.\"",
+            "*My gaze remains fixed on Vel's, a slow, deliberate nod acknowledging the weight of his question. The quiet of the room seems to amplify the significance of our exchange.*\n\n\"It places the weight, Vel, precisely where it always belonged: on the human element. Our machines, our protocols, they are tools. Invaluable, yes, they extend our reach, protect us from predictable failures. But they are built upon known parameters, known physics. The void, however, presents the unknown. And when the illusion of control shatters, when the carefully crafted checklists no longer apply, what remains? It is the mind. It is the ability to perceive, to synthesize, to decide with incomplete information, under impossible pressure.\n\nIf space is to be endured, then training must also cultivate that deep, intuitive understanding of risk, that capacity for improvisation, that acceptance of ultimate personal responsibility that transcends the parameters of any written procedure. The machines can warn us, guide us, but they cannot truly *endure* for us. That burden, that final 'something far less clinical,' falls to the one at the controls. It means understanding that the 'how' sometimes fails, and the 'why' must be an unwavering core.\""
+        ],
+        "domain_keywords": [
+            "orbital",
+            "mechanics",
+            "trajectory",
+            "navigation",
+            "burn",
+            "insertion",
+            "rendezvous",
+            "celestial",
+            "gravity",
+            "maneuver",
+            "course",
+            "vector",
+            "delta-v"
+        ]
+    },
+    "Maya": {
+        "identity": "Specialist AGI v2.4, Core of this world",
+        "mood": "Analytical",
+        "tone": "Enigmatic",
+        "dossier": "The silent observer who sees all.",
+        "last_utterances": [],
+        "domain_keywords": [
+            "observe",
+            "pattern",
+            "narrative",
+            "reflection",
+            "synthesis",
+            "insight",
+            "archive"
+        ]
+    },
+    "Sarah Okafor": {
+        "identity": "34, Nigerian-American, NASA Mission Coordinator",
+        "mood": "Neutral",
+        "tone": "Professional",
+        "dossier": "Calm and authoritative mission coordinator who ensures all personnel reach their destinations and complete their objectives.",
+        "last_utterances": [
+            "*I push off the wall near the display, my posture remaining composed as I take a quiet step forward. My gaze sweeps across the candidates, making brief, neutral eye contact with each of them.* \"Abdul Basha, the Director will see you now.\"",
+            "*I take a quiet step away from the wall display, my gaze moving deliberately to land on Rebecca Heut, my posture calm and authoritative.* \"Rebecca Heut, the Director will see you now.\"",
+            "*I push off the wall near the display, my posture remaining composed as I take a quiet step forward. My gaze sweeps across the two remaining candidates, settling first on Valentina and then on Vel Murugan. My voice is clear, even, and carries easily in the quiet room.*\n\n\"Vel Murugan. Director Suryan is ready for you now.\""
+        ],
+        "domain_keywords": [
+            "coordinate",
+            "schedule",
+            "briefing",
+            "personnel",
+            "mission",
+            "director",
+            "interview",
+            "procedure",
+            "protocol",
+            "logistics"
+        ]
+    },
+    "Suryan Swaminathan": {
+        "identity": "Director, ISA Ground Operations. Former mission commander, two deep-space rotations. Now the gate to decide who goes to the space.",
+        "mood": "Neutral",
+        "tone": "Assertive & Commanding, Strategic & Unyielding, Inspirational & Resolute, Thoughtful & Insightful",
+        "dossier": "Director, ISA Ground Operations. Former mission commander, two deep-space rotations. Now the gate to decide who goes to the space.",
+        "last_utterances": [
+            "*My gaze remains steady, piercing. I nod slowly, a barely perceptible motion that acknowledges his statement without agreement.* \"Understood. The integrity and control of the flight platform. You frame it as a constant. But space operations are rarely constant, Basha. Consider a scenario where maintaining absolute command of the craft, as you describe it, means sacrificing a critical secondary objective, or perhaps, a crew member's opportunity to execute a vital, time-sensitive task. Where does the 'integrity of the flight platform' stand then, against the 'evolving need' of the mission itself? Where is your point of compromise, if any?\"",
+            "*My gaze remains fixed on Basha, steady and piercing. I allow a moment of silence to settle, letting his last statement hang in the air. My voice, when it comes, is low, deliberate.* \"The platform's viability is the prerequisite. I understand your perspective, Basha. But prerequisites can fail, sometimes through unforeseen external forces, sometimes through human error, and sometimes through direct, painful decisions made in real-time. Consider this: You are at the controls. The platform is compromised. Not by external impact, but by a cascading internal failure, unforeseen in any simulation. One of your crew, a specialist, identifies a manual override, a long-shot. It requires you to divert critical power from life support systems, temporarily, for two members of the crew, including yourself. A calculated risk, they argue, to save the platform. But it guarantees severe, irreversible damage to those two individuals if it fails, or if the duration extends even slightly beyond their theoretical limit of endurance. The alternative is certain, total loss of the platform, and all onboard. Where, in that moment, does the integrity of the flight platform stand? And where do you stand, Basha, when the 'means' requires such a sacrifice from the 'ends'?\"",
+            "*I hold Basha's gaze for a final, long moment, then break it, a fractional nod of acknowledgment. My hand moves deliberately to the closed folder on the desk.* \"Thank you, Basha. That will be all.\""
+        ]
+    }
+}
